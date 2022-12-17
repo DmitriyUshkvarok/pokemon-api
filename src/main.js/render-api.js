@@ -18,11 +18,6 @@ refs.searchInput.addEventListener('input', debounce(onInputForm, 300));
 
 function onInputForm(inputSearch) {
   const list = refs.searchInput.value;
-
-  // if (list.length >= 1) {
-  //   // const listMarkup = listPokemon(list);
-  //   // refs.listItem.insertAdjacentHTML('beforeend', listMarkup);
-  // }
   fetchPokemonApi(list)
     .then(response => {
       if (list.length >= 1) {
