@@ -4,13 +4,20 @@ html {
 
 body {
   width: 100%;
-  background-image: url('../images/bg-dark-4820.png');
+  background-image: url('../images/wallpaperbetter.com_2560x1440.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-size: 12px;
   line-height: 1.86;
+}
+
+body.show {
+  background-image: url('../images/white-theme-fon.jpg');
 }
 
 ul {
