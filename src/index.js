@@ -4,3 +4,6 @@ import './main.js/logo-animation';
 import './main.js/search-btn';
 import './main.js/reset-input';
 import './main.js/btn-theme';
+import './main.js/paralax.min';
+import './main.js/body-paralax';
+import './main.js/full-collection-api';

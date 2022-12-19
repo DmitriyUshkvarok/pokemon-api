@@ -14,25 +14,7 @@ export const refs = {
 };
 
 refs.searchForm.addEventListener('submit', onFormSubmit);
-refs.searchInput.addEventListener('input', debounce(onInputForm, 300));
 
-function onInputForm(inputSearch) {
-  const list = refs.searchInput.value;
-  fetchPokemonApi(list)
-    .then(response => {
-      if (list.length >= 1) {
-        const listMarkup = listPokemon(response);
-        refs.listItem.insertAdjacentHTML('beforeend', listMarkup);
-      }
-    })
-    .catch(onError);
-}
-// function onListGallery(ownerList, list) {
-//   if (list.length >= 1) {
-//     const listMarkup = listPokemon(ownerList);
-//     refs.listItem.insertAdjacentHTML('beforeend', listMarkup);
-//   }
-// }
 function onFormSubmit(e) {
   e.preventDefault();
   refs.searchBtn.classList.add('open');
