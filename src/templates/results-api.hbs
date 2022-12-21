@@ -1,0 +1,14 @@
+{{#each results}}
+  <div class='card-all'>
+    <div class='card-img-top'>
+      <img
+        class='pokemon-imgs'
+        src='{{sprites.front_default}}'
+        alt='{{name}}'
+      />
+    </div>
+    <div class='card-body'>
+      <h2 class='card-title'>Name:{{this.name}}</h2>
+    </div>
+  </div>
+{{/each}}

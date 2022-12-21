@@ -8,10 +8,9 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px 10px rgba(6, 230, 246, 0.7),
-    inset 0 0 10px 10px rgba(6, 230, 246, 0.7);
+  box-shadow: 0 0 5px 5px rgba(249, 78, 4, 0.7),
+    inset 0 0 5px 5px rgba(249, 78, 4, 0.7);
   padding: 20px;
-  margin-bottom: 30px;
 }
 
 .gallery.show {
@@ -20,8 +19,33 @@
   visibility: visible;
 }
 
+.card-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 200px;
+  padding: 15px;
+  background-color: rgba(217, 207, 207, 0.9);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #e6e6e6, 0px 0px 0px #e6e6e6, 0px 0px 0px #e6e6e6,
+    2px 2px 5px #e6e6e6, 0px 0px 0px #e6e6e6, 0px 0px 0px #e6e6e6;
+}
+
+.card-all.hidden {
+  display: none;
+}
+
+.pokemon-imgs {
+  // border: 5px solid rgb(249, 196, 4);
+  box-shadow: 10px 7px 3px 3px rgba(23, 22, 21, 0.2);
+  background-color: rgba(249, 196, 4, 0.4);
+  border-radius: 10px;
+}
+
 .card {
-  background-color: rgba(243, 8, 8, 0.9);
+  background-color: rgba(217, 207, 207, 0.8);
   max-width: 400px;
   padding: 30px;
   min-height: 300px;
