@@ -7,3 +7,5 @@ import './main.js/btn-theme';
 import './main.js/paralax.min';
 import './main.js/body-paralax';
 import './main.js/full-collection-api';
+import './main.js/google-translate';
+import './main.js/location';
